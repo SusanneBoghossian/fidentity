@@ -2,23 +2,48 @@
 
 @import "bootstrap";
 
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
 body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.container {
+    display: inherit;
+}
+.container h3, .container h4 {
     // text-align: center;
 }
 
-.container h3, .container h4 {
-    text-align: center;
-}
 .separator {
     height: 20px;
 }
 
-// .thirdparty-selection {
-//     border: 1px dotted red;
-//     margin-left: 20px;
-//     margin-right: 20px;
-// }
+.fidentity-upload {
+    button {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    display: block;
+    }
+}
 
+.fidentity-img-container {
+    border: 1px dotted $mine-shaft;
+    border-radius: 4px;
+    text-align: center;
+    height: auto;
+    width: auto;
+
+}
 .btn-facebook {
     background-color: mediumblue;
     color: white;
@@ -27,4 +52,8 @@ body {
 .btn-google {
     margin-right: 40px;
 
+}
+
+.pull-right {
+    float:right;
 }

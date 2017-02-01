@@ -1,5 +1,23 @@
-<h3>{{pageTitle}}</h3>
-<div>
-    <button type="button" class="btn btn-primary" (click)="previous()">Previous</button>
-    <button type="button" class="btn btn-info" (click)="next()">Next</button>
+<div class="container">
+    <h3>Upload a picture of the back of your ID card</h3>
+    <div class="separator"></div>
+    <div class="row fidentity-upload">
+        <div class="col-4">
+            <button type="button" class="btn btn-primary">Take picture</button>
+            <button type="button" class="btn btn-primary">OK</button>
+        </div>
+        <div class="col-8 fidentity-img-container">
+            <img src="" />your uploaded image here
+        </div>
+        <div class="separator"></div>
+        <div class="row">
+            <div class="fidentity-img-container">
+                <img src=""width=""/>Example image
+            </div>
+        </div>
+    </div>
+    <div class="separator"></div>
+    <p>
+        The picture must be bright and sharp without reflections and should fill the frame
+    </p>
 </div>
