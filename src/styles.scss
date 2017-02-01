@@ -2,21 +2,29 @@
 
 @import "bootstrap";
 
-// body {
-//     font-family: Arial, Helvetica, sans-serif;
-//     font-size: 16px;
-//     color: black;
-//     text-align: center;
+body {
+    // text-align: center;
+}
+
+.container h3, .container h4 {
+    text-align: center;
+}
+.separator {
+    height: 20px;
+}
+
+// .thirdparty-selection {
+//     border: 1px dotted red;
+//     margin-left: 20px;
+//     margin-right: 20px;
 // }
 
-// h3 {
-//     color: deepskyblue;
-//     margin-bottom: 50px;
-// }
+.btn-facebook {
+    background-color: mediumblue;
+    color: white;
+}
 
-// button {
-//     font-size: 14px;
-//     background-color: #FFA94D;
-//     border-radius: 3px;
-//     border: #FFA94D;
-// }
+.btn-google {
+    margin-right: 40px;
+
+}
