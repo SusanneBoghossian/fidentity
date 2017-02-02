@@ -2,24 +2,11 @@
 
 @import "bootstrap";
 
-html, body {
-    height: 100%;
+body *{
+    border: 1px dotted black;
 }
 
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.container {
-    display: inherit;
-}
-.container h3, .container h4 {
+h3, h4 {
     // text-align: center;
 }
 
@@ -27,33 +14,26 @@ body {
     height: 20px;
 }
 
-.fidentity-upload {
-    button {
-    width: 100%;
-    float: left;
-    margin-bottom: 10px;
-    display: block;
-    }
+.list-unstyled {
+    padding-left: 15px;
 }
 
-.fidentity-img-container {
-    border: 1px dotted $mine-shaft;
-    border-radius: 4px;
-    text-align: center;
-    height: auto;
-    width: auto;
-
-}
 .btn-facebook {
+    @extend .btn-primary;
     background-color: mediumblue;
     color: white;
 }
 
 .btn-google {
-    margin-right: 40px;
-
+        @extend .btn-primary;
+    // margin-right: 40px;
+    background-color: darkred;
+    color: white;
 }
 
-.pull-right {
-    float:right;
+.btn-primary {
+    &:hover {
+        background-color: $surfie-green;
+        border-color: $surfie-green;
+    }
 }

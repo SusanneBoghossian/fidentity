@@ -1,5 +1,42 @@
-<h3>{{pageTitle}}</h3>
-<div>
-    <button type="button" class="btn btn-primary" (click)="previous()">Previous</button>
-    <button type="button" class="btn btn-info" (click)="next()">Next</button>
+<div class="container">
+<div class="row">
+    <div class="col-sm-12">
+        <h3>Upload a picture of the back of your ID card
+        </h3>
+    </div>
+    <div class="col-sm-4">
+        <button class="btn btn-primary btn-block">Test button</button>
+        <button class="btn btn-danger btn-block">Test button 2</button>
+    </div>
+    <div class="col-sm-8">
+        col-sm-8
+        <img class="img-fluid" src="../public/images/examples/back_uploaded.jpg" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 col-sm-6">
+        <div class="btn-group">
+        <button class="btn btn-google float-left">Google</button>
+                <button class="btn btn-facebook float-right">Facebook</button>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-6">
+
+        <form action="">
+            <fieldset class="form-group">
+                <label for="first_name">First Name</label>
+                <input type="text" class="form-control" id="first_name" name="first_name">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" class="form-control" id="last_name" name="last_name">
+            </fieldset>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+
+</div>
 </div>
