@@ -8,7 +8,7 @@
 <div class="separator"></div>
 <div class="separator"></div>
 <div class="row">
-    <div class="col-md-4 col-sm-6 mx-auto">
+    <div class="col-md-4 col-sm-6">
         <div class="btn-group">
             <button class="btn btn-google float-left">Google</button>
             <button class="btn btn-facebook float-right">Facebook</button>
@@ -16,23 +16,27 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-md-6 mx-auto">
-        <form action="">
-            <fieldset class="form-group">
-                <label for="first_name">First Name</label>
-                <input type="text" class="form-control" id="first_name" name="first_name">
-            </fieldset>
-            <fieldset class="form-group">
-                <label for="last_name">Last Name</label>
-                <input type="text" class="form-control" id="last_name" name="last_name">
-            </fieldset>
-            <button type="submit" class="btn btn-primary float-right">Submit</button>
+    <div class="col-md-6">
+        <form [formGroup]="signupForm" (ngSubmit)="signup(signupForm.value, signupForm.valid)">
+            <div class="form-group" [ngClass]="{'has-danger': !mailValid}">
+                <label for="email">Your E-Mail</label>
+                <input class="form-control" type="text" id="email" formControlName="email" data-error="abc">
+            </div>
+            <div class="form-group">
+                <label for="password">Your password</label>
+                <input type="text" class="form-control" id="password" formControlName="password">
+            </div>
+            <div class="form-group">
+                <label for="repeatPassword">Repeat your password</label>
+                <input type="text" class="form-control" id="repeatPassword" formControlName="repeatPassword">
+            </div>
+            <button type="submit" class="btn btn-primary float-right" id="signup">Submit</button>
         </form>
     </div>
 </div>
 <div class="separator"></div>
 <div class="row">
-    <div class="col-xs-6 mx-auto">
+    <div class="col-xs-6">
         <ul class="list-unstyled">
             <li>Fidentity will verify your profile.</li>
             <li> We will check who you are through scans of your national ID card.</li>
